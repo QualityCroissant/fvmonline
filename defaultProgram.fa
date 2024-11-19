@@ -1,0 +1,48 @@
+            jm start
+
+            ; Variable declarations:
+
+charptr:    message
+message:    [Hello, world!]s [10]d [0]b
+
+            ; Runtime:
+
+start:      pl mem mch
+
+            ; Go through each of the letters and print them out:
+
+loop:       pl charptr mar ; Get the current letter:
+            ld
+
+            mv mdr mar
+            ld
+
+            ; If the letter is 0, finish execution:
+
+            mv mdr acc
+            jc end
+
+            ; Output letter:
+
+            pl out mch
+            pl [0]b mar
+            st
+
+            ; Increment character pointer:
+
+            pl mem mch
+
+            pl charptr mar
+            ld
+            mv mdr acc
+            ai
+            mv acc mdr
+            st
+
+            ; Go back to the beginning of the loop:
+
+            jm loop
+
+            ; Finish execution:
+
+end:        fi

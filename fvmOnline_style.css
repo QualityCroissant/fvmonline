@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    text-align: center;
+    font-family: Rubik;
+    margin: auto;
+    width: 90%;
+    background-color: #011627;
+    color: #F6F7F8;
+    height: 100vh;
+}
+
+img {
+    width: 5%;
+    height: auto; 
+}
+
+nav {
+    display: flex;
+    padding: 3px;
+    gap: 3px;
+}
+
+button {
+    margin: auto;
+    background-color: #FF3366;
+    font-size: 20px;
+    color: #F7F8F9;
+    border: none;
+    width: 50%;
+}
+
+button:active {
+    background-color: #EC003B;
+    color: #B7BEC6;
+    /* border: solid #B7BEC6; */
+}
+
+.page {
+    flex: 1;
+    background-color: #02233F;
+}
+
+h1 {
+    font-size: 70px;
+    text-decoration-line: underline;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    padding: 3px;
+    margin: 3px;
+}
+
+table {
+    height: 75vh;
+    width: 100%;
+}
+
+td {
+    width: 50%;
+    height: 100%;
+    /* border: solid #F6F7F8; */
+    border: none;
+    background-color: #2EC4B6;
+}
+
+.split_table {
+    height: 50%;
+}
+
+.box_area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.editor_box, textarea {
+    flex: 1;
+    resize: none;
+    border: none;
+    outline: none;
+    margin: 3px;
+    padding: 3px;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+} 
+
+.ace_editor, textarea {
+    background-color: #011627;
+    color: #F6F7F8;
+}
+
+.ace_gutter {
+    background-color: #02233F !important;
+}
+
+.ace_active-line {
+    background-color: #033057 !important;
+}
+
+.ace_gutter-active-line {
+    background-color: #043E70 !important;
+}
+
+.ace_selection {
+    background-color: #0662B1 !important;
+}
