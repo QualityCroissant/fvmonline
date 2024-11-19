@@ -1,1 +1,60 @@
-<p>Hello!</p>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FVM Online</title>
+        <link rel="icon" href="logo.png" type="image/png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <link rel="stylesheet" href="fvmOnline_style.css">
+    </head>
+
+    <body>
+        <div class="page">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+            <script src="fvm/fvm/fvm.js"></script>
+            <script src="fvmOnline_runtime.js"></script>
+
+            <header>
+                <img src="logo.png">
+                <h1>FVM Online</h1>
+                <h2>Run Fox Assembly code from an online interactive session</h2>
+            </header>
+
+            <nav>
+                <button id="assemble_button">Assemble</button>
+                <button id="run_button">Run</button>
+            </nav>
+
+            <section>
+                <article>
+                    <table>
+                        <tr>
+                            <td rowspan="2">
+                                <div class="box_area">
+                                    <h3>Source</h3>
+                                    <div class="editor_box" id="fvmo_source_box"></div>
+                                </div>
+                            </td>
+
+                            <td class="split_table">
+                                <div class="box_area">
+                                    <h3>ROM Contents</h3>
+                                    <textarea id="fvmo_rom_box"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="split_table">
+                                <div class="box_area">
+                                    <h3>Session</h3>
+                                    <textarea id="fvmo_execution_box"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>
